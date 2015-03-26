@@ -31,12 +31,11 @@
 <body>
 
   <div id="circle"></div>
-  <div class="square"></div>
-  <div class="square"></div>
+  <p>Default text</p>
 
   <script>
-    $('div').click(function(){
-      console.log("div clicked");
+    $('#circle').click(function(){
+      $('p').html("hello world");
     });
 
   </script>
