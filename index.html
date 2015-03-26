@@ -30,22 +30,19 @@
 
 <body>
 
-  <p id="text"> This is some text</p>
-  <button id="button"> push me!</button>
-  <button id="fadein"> push me back!</button>
-
+  <div id="circle"></div>
 
   <script>
-    $("#button").click(function(){
-      //$(this).css("display", "none");
-      $("#text").fadeOut(1000, function(){
-        console.log("fade out complete");
-      });
+    $("#circle").click(function(){
+      $(this).animate({
+        width:"300px",
+        height:"300px",
+        borderRadius:"150px",
+        marginLeft:"100px",
+        marginTop:"100px"
+      }, 800);
     });
-    $("#fadein").click(function(){
-      //$(this).css("display", "none");
-      $("#text").fadeIn(2000);
-    });
+
 
   </script>
 </body>
