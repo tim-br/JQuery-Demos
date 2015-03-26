@@ -31,16 +31,14 @@
 <body>
 
   <div id="circle"></div>
-  <div class="square"></div>
-  <div class="square"></div>
-  <p>Default text</p>
+  <p id="text"> This is some text</p>
+  <button id="button"> push me!</button>
 
-  <iframe src="http://www.example.com"></iframe>
 
   <script>
-    $("#circle").click(function(){
+    $("#button").click(function(){
       //$(this).css("display", "none");
-      $(".square").fadeOut();
+      $("#text").fadeOut();
     });
 
   </script>
