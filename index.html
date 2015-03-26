@@ -35,11 +35,10 @@
   <div class="square"></div>
 
   <script>
-    if(typeof JQuery != "undefined"){
-      console.log("is installed");
-    } else{
-      console.log("is not installed");
-    }
+    $('div').click(function(){
+      console.log("div clicked");
+    });
+
   </script>
 </body>
 </html>
