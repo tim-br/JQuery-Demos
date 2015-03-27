@@ -31,9 +31,14 @@
   <div id="target"></div>
 
   <script>
-  $(function() {
     $("#square").draggable();
-  });
+    $("#target").droppable({
+      drop: function(ui, event){
+        console.log("helo");
+        $("#target").css("background-color", "red");
+      }
+    });
+
 
   </script>
 
