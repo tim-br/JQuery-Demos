@@ -34,14 +34,15 @@
 
 
   <script>
+    var word =/Great/i;
+    var regex=/e/g;
+    var string="Regex is great";
 
+    var result = string.match(regex);
+    var result2 = string.match(word);
 
-
-    $.ajax({
-      url:"test.html"
-    }).done(function(data) {
-      $('h1').append(data);
-    })
+    console.log(result);
+    console.log(result2);
 
   </script>
 </body>
