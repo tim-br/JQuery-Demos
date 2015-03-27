@@ -35,9 +35,13 @@
 
   <script>
 
-    $.get('test.html', function(data) {
+
+
+    $.ajax({
+      url:"test.html"
+    }).done(function(data) {
       alert(data);
-    });
+    })
 
   </script>
 </body>
